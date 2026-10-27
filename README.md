@@ -106,6 +106,10 @@ the lab's onboard software [GO2_ONBOARD_THDTCC](https://github.com/thd-research/
 the connection between the robot and the PC follows the lab's host setup
 [GO2_THDTCC](https://github.com/thd-research/GO2_THDTCC).
 
+![Baseline and human-aware navigation on the real Go2](docs/media/go2_baseline_vs_humanaware.gif)
+
+*Head-on walker on the real Go2, 20 October 2026, one run each. Left: the baseline, Nav2 MPPI with the walker treated only as an obstacle (surface clearance 0.02 m). Right: the proposed pipeline, keeping to the right (0.77 m). Played at 1.5x speed; faces blurred frame by frame.*
+
 ## Documentation
 
 | Document | What it holds |
