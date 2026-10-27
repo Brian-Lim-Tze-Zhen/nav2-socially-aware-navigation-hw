@@ -177,7 +177,6 @@ The comparison across these days is computed by `workspace/pytest/analysis/side_
 ```
 humble_client/
 ├── Dockerfile / docker-compose.yaml   container set-up
-├── run_humble_client.sh               a separate throwaway container (osrf/ros:humble-desktop, domain 2); not used by the runs
 ├── Turtlebot4_Documentation.md        hardware notes and issue log (cited in the thesis)
 ├── Task/                              run records of the robot days (5, 8, 9 and 12 October 2026) and the notes of 9 September
 └── workspace/                         mounted as /root/thesis_social_navigation_ws
