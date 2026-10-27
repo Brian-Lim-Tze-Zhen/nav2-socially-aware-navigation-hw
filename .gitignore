@@ -37,3 +37,6 @@ humble_client/workspace/test_data/
 
 # videos of the robot runs are published only as face-blurred GIFs in docs/media
 *.mp4
+
+# personal hardware notes and issue log: kept local, not published
+humble_client/Turtlebot4_Documentation.md

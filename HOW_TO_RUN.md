@@ -151,7 +151,7 @@ The order used on the robot days. The record of each day is in `humble_client/Ta
 
 The maps in `workspace/map/` and the goals in the run script are for the university hallway (`map/hall_map_name.yaml`). Elsewhere:
 
-1. **Make a map** (container): start SLAM, drive the robot round with the keyboard, and save the map (commands from `humble_client/Turtlebot4_Documentation.md`):
+1. **Make a map** (container): start SLAM, drive the robot round with the keyboard, and save the map:
    ```bash
    ros2 launch turtlebot4_navigation slam.launch.py sync:=false namespace:=/turtlebot4
    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/turtlebot4/cmd_vel
@@ -177,7 +177,6 @@ The comparison across these days is computed by `workspace/pytest/analysis/side_
 ```
 humble_client/
 ├── Dockerfile / docker-compose.yaml   container set-up
-├── Turtlebot4_Documentation.md        hardware notes and issue log (cited in the thesis)
 ├── Task/                              run records of the robot days (5, 8, 9 and 12 October 2026) and the notes of 9 September
 └── workspace/                         mounted as /root/thesis_social_navigation_ws
     ├── src/                           critic plugins: social_critic (no lanes), social_critic_lane,

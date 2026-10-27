@@ -118,7 +118,6 @@ the connection between the robot and the PC follows the lab's host setup
 | [Configurations](https://github.com/Brian-Lim-Tze-Zhen/Turtlebot4-Social-Navigation-Jazzy-Simulation-/blob/main/docs/CONFIGURATIONS.md) | what the parts of the configuration names mean, the ROS topics, and the robot and simulation files side by side (in the simulation repository) |
 | [Scripts](humble_client/workspace/scripts/README.md) | which scripts the final configuration uses, and which are earlier versions |
 | [Run records](humble_client/Task/) | the robot days of 5, 8, 9 and 12 October 2026: every counted and discarded run with its reason |
-| [Hardware notes](humble_client/Turtlebot4_Documentation.md) | hardware notes and issue log |
 
 ## References
 
