@@ -4,7 +4,7 @@ Robot side of the master's thesis *Lightweight Socially-Aware Navigation via Hum
 
 The pipeline runs on a laptop in a Docker container and drives a physical TurtleBot 4 over Wi-Fi. **Stack:** ROS 2 Humble · Cyclone DDS · AMCL and Nav2 with the MPPI controller · YOLO (Ultralytics, OpenVINO) · RPLiDAR · OAK-D. MobileCLIP-S1 is installed but [not used](HOW_TO_RUN.md#5-known-problems).
 
-**Contents:** [Results](#results) · [Pipeline](#pipeline) · [Analysis](#analysis) · [Quick start](#quick-start) · [Documentation](#documentation) · [References](#references) · [Citation](#citation)
+**Contents:** [Results](#results) · [Pipeline](#pipeline) · [Analysis](#analysis) · [Quick start](#quick-start) · [Go2](#porting-to-a-unitree-go2) · [Documentation](#documentation) · [References](#references) · [Citation](#citation)
 
 ## Results
 
@@ -96,6 +96,15 @@ ros2 launch launch/robot_day_all.launch.py
 ```
 
 Recorded runs are started from the laptop, not the container, one command per run; the whole procedure, from switching the robot on to checking a bag, is described in [a robot day, step by step](HOW_TO_RUN.md#31-a-robot-day-step-by-step).
+
+## Porting to a Unitree Go2
+
+The pipeline is not tied to the TurtleBot 4. It was ported to a Unitree Go2 quadruped, in simulation and
+in first trials on the real robot in the lab, with robot-specific adaptations (sideways walking, heading
+control, sensor and camera settings) but the same social rules and perception chain. The real Go2 runs
+the lab's onboard software [GO2_ONBOARD_THDTCC](https://github.com/thd-research/GO2_ONBOARD_THDTCC);
+the connection between the robot and the PC follows the lab's host setup
+[GO2_THDTCC](https://github.com/thd-research/GO2_THDTCC).
 
 ## Documentation
 
